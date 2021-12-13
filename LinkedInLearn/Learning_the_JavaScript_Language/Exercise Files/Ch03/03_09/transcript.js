@@ -10,15 +10,15 @@ console.log( regex.test(string2) );
 console.log( regex.test(string3) );
 console.log( regex.test(string4) );
 
-regex = /this/i;
+regex = /this/i;  // `i` is a flag to make case-insensitive
 
-regex = /^this/i;
+regex = /^this/i;  // checks for word at beginning of string
 
-regex = /this$/i;
+regex = /this$/i;  // checks for word at end of string
 
-regex = /ever.$/i;
+regex = /ever.$/i;  // checks for word + 1 character at end of string
 
-regex = /ever\.$/i;
+regex = /ever\.$/i;  // checks for word + . at end of string
 
 regex = /Moun.$/i;
 
