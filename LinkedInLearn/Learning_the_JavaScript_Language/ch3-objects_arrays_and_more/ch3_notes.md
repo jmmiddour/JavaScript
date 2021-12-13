@@ -90,11 +90,52 @@
 
 ### [Readability: Whitespace](https://www.linkedin.com/learning/learning-the-javascript-language-2/readability-whitespace?autoplay=true&resume=false)
 
+Whitespace does not matter in JS, but it does help with readability.
 
+However, if you have a long string that you want to break up between more than one line, you will need to use `/` but make sure there is no whitespace after the `/` or it will throw an error.
+
+A great tool to make your code more readable is [Prettier](https://prettier.io).
 
 ### [Readability: Comments](https://www.linkedin.com/learning/learning-the-javascript-language-2/readability-comments?autoplay=true&resume=false)
 
+Comments are used for documenting and disabling parts of your code.
 
+A single line comment: 
+```
+// This is a single line comment
+```
+
+A block (multiple line) comment:
+```
+/*
+You can write comments
+across multiple lines
+finally ending with:
+*/
+```
 
 ### [Regular Expressions](https://www.linkedin.com/learning/learning-the-javascript-language-2/regular-expressions?autoplay=true&resume=false)
 
+- In JS regular expressions is another data type, just like numbers or strings
+
+- A regex in JS starts with `/` and ends with `/` as long as you put something in between it is a regex literal
+
+- What goes inbetween the `/`s can be:
+  - words
+  - numbers
+  - various combinations
+  - patterns
+
+- Helpful book: [Mastering Regular Expressions by Jeffery Friedl](http://regex.info/book.html)
+
+- `<name of your regex>.test()` method is what you use to look for your regex in the string you pass into the method and returns true or false
+
+- You can add an `i` (called a "flag") at the end of a regex after the `/` to make the regex case-insensitive, otherwise regex is case-sensitive
+
+- Using `^` after the `/` at the start of the regex checks if the regex is at the beginning of the string
+
+- Using `$` before the `/` at the end of the regex will check if the regex appears at the end of the string
+
+- Using `.` is a wildcard for a single character
+
+- If you want to look for an actual `.` symbol you have to write it as `\.`
